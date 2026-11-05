@@ -1,7 +1,7 @@
 /* Capital Coin. Headlines: Libre Caslon Text (same Roman class + weight as the yellow-on-black logo).
    Velvet #091322 = sampled from their own gold-sovereign photo; gold #f0d004 = sampled from the logo. */
-@font-face{font-family:"Caslon";src:url(E:/Git/capital-coin-preview/fonts/caslon.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:block}
-@font-face{font-family:"Instrument Sans";src:url(E:/Git/capital-coin-preview/fonts/instrument.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:block}
+@font-face{font-family:"Caslon";src:url(/capital-coin-preview/fonts/caslon.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:block}
+@font-face{font-family:"Instrument Sans";src:url(/capital-coin-preview/fonts/instrument.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:block}
 :root{
   --black:#050608; --velvet:#091322; --velvet-2:#0f1d31; --velvet-line:rgba(240,208,4,.18);
   --gold:#f0d004; --gold-2:#d9b51c; --brass:#7a5d00; --brass-2:#5e4700;
@@ -152,7 +152,7 @@ p,li,dd,small,figcaption,cite{text-wrap:pretty}
 
 /* reviews: velvet over their own store interior */
 .reviews{position:relative;isolation:isolate;background:var(--velvet);color:rgba(255,255,255,.82);padding:7rem 0;overflow:hidden}
-.reviews::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,19,34,.9),rgba(9,19,34,.84) 50%,rgba(9,19,34,.95)),url(E:/Git/capital-coin-preview/img/slabs-wide.jpg) center/cover no-repeat;filter:saturate(.6)}
+.reviews::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,19,34,.9),rgba(9,19,34,.84) 50%,rgba(9,19,34,.95)),url(/capital-coin-preview/img/slabs-wide.jpg) center/cover no-repeat;filter:saturate(.6)}
 .quote-big{max-width:900px;margin:0 auto;text-align:center}
 .quote-big .kick{justify-content:center}
 .quote-big .kick::after{content:"";width:46px;height:9px;flex:none;background:repeating-linear-gradient(90deg,currentColor 0 1.5px,transparent 1.5px 4px);opacity:.9}
@@ -206,8 +206,8 @@ p,li,dd,small,figcaption,cite{text-wrap:pretty}
 .pane p{color:rgba(255,255,255,.86);max-width:44ch}
 .pane .btn,.pane .link{align-self:flex-start;margin-top:.3rem}
 .pane .link{color:#fff}
-.pane-estate{background-image:url(E:/Git/capital-coin-preview/img/pane-estate.jpg);background-position:50% 40%}
-.pane-bullion{background-image:url(E:/Git/capital-coin-preview/img/pane-bullion.jpg);background-position:50% 50%}
+.pane-estate{background-image:url(/capital-coin-preview/img/pane-estate.jpg);background-position:50% 40%}
+.pane-bullion{background-image:url(/capital-coin-preview/img/pane-bullion.jpg);background-position:50% 50%}
 
 /* visit */
 .visit{background:var(--white);padding:7rem 0;border-top:1px solid var(--line)}

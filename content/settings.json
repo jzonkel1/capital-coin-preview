@@ -1,7 +1,7 @@
 {
   "banner": {
-    "show": true,
-    "text": "Test from Zonkel: editing pipeline check"
+    "show": false,
+    "text": ""
   },
   "hours": {
     "monday": {
@@ -32,7 +32,7 @@
     "saturday": {
       "open": true,
       "opens": "10:00 AM",
-      "closes": "4:00 PM"
+      "closes": "6:00 PM"
     },
     "sunday": {
       "open": false,

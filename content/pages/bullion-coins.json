@@ -1,0 +1,33 @@
+{
+  "photos": {
+    "hero_bars": {
+      "photo": "/img/hero-bars-1500.jpg",
+      "description": "Silver bars and rounds on the counter at Capital Coin",
+      "crop": "middle"
+    },
+    "fig_bars": {
+      "photo": "/img/fig-bars.jpg",
+      "description": "Silver bars and rounds, from 10 ounces to a kilo",
+      "crop": "middle"
+    },
+    "t_eagles": {
+      "photo": "/img/t-eagles.jpg",
+      "description": "American Eagle silver coin set in its case",
+      "crop": "middle"
+    },
+    "t_gold": {
+      "photo": "/img/t-gold.jpg",
+      "description": "Gold sovereigns on black velvet",
+      "crop": "middle"
+    },
+    "t_walkers": {
+      "photo": "/img/t-walkers.jpg",
+      "description": "Boxed Walking Liberty half dollar collection",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

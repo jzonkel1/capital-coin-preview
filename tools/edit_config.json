@@ -1,0 +1,907 @@
+{
+ "base": "",
+ "css": "css/site.css",
+ "hours_js": [
+  "js/site.js"
+ ],
+ "kick_html": "<p class=\"kick\">Photos</p>",
+ "colors": {
+  "ink": "#091322",
+  "paper": "#f7f2e6"
+ },
+ "hours_default": {
+  "monday": [
+   10,
+   18
+  ],
+  "tuesday": [
+   10,
+   18
+  ],
+  "wednesday": [
+   10,
+   18
+  ],
+  "thursday": [
+   10,
+   18
+  ],
+  "friday": [
+   10,
+   18
+  ],
+  "saturday": [
+   10,
+   18
+  ],
+  "sunday": null
+ },
+ "hours_phrases": {
+  "days_long": "Monday to Saturday",
+  "days_short": "Mon to Sat",
+  "time_short": "10 to 6",
+  "time_long": "10 AM to 6 PM",
+  "closed": "Sunday"
+ },
+ "pages": {
+  "home": {
+   "label": "Home page",
+   "html": "index.html",
+   "slots": {
+    "hero": {
+     "files": [
+      {
+       "file": "img/hero.jpg",
+       "w": 1600,
+       "h": 1600
+      },
+      {
+       "file": "img/hero-band.jpg",
+       "w": 1200,
+       "h": 608
+      }
+     ],
+     "default": "/img/hero.jpg",
+     "alt": "A row of gold sovereigns on black velvet at Capital Coin",
+     "label": "A row of gold sovereigns on black velvet at Capital Coin",
+     "also": []
+    },
+    "inside": {
+     "files": [
+      {
+       "file": "img/inside.jpg",
+       "w": 1080,
+       "h": 1464
+      }
+     ],
+     "default": "/img/inside.jpg",
+     "alt": "Graded silver dollars lined up in the Capital Coin display case",
+     "label": "Graded silver dollars lined up in the Capital Coin display case",
+     "also": []
+    },
+    "svc_buy": {
+     "files": [
+      {
+       "file": "img/svc-buy.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-buy.jpg",
+     "alt": "A tray of Eisenhower dollars priced at $4 each or 3 for $10",
+     "label": "A tray of Eisenhower dollars priced at $4 each or 3 for $10",
+     "also": []
+    },
+    "svc_bullion": {
+     "files": [
+      {
+       "file": "img/svc-bullion.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-bullion.jpg",
+     "alt": "Silver bars and rounds on the counter",
+     "label": "Silver bars and rounds on the counter",
+     "also": []
+    },
+    "svc_gold": {
+     "files": [
+      {
+       "file": "img/svc-gold.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-gold.jpg",
+     "alt": "Gold sovereigns on black velvet, up close",
+     "label": "Gold sovereigns on black velvet, up close",
+     "also": []
+    },
+    "svc_appraise": {
+     "files": [
+      {
+       "file": "img/svc-appraise.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-appraise.jpg",
+     "alt": "Graded coins in slabs in the display case",
+     "label": "Graded coins in slabs in the display case",
+     "also": []
+    },
+    "svc_estate": {
+     "files": [
+      {
+       "file": "img/svc-estate.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-estate.jpg",
+     "alt": "A case full of old silver coins",
+     "label": "A case full of old silver coins",
+     "also": []
+    },
+    "svc_paper": {
+     "files": [
+      {
+       "file": "img/svc-paper.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-paper.jpg",
+     "alt": "Gold coins in holders on top of old paper money",
+     "label": "Gold coins in holders on top of old paper money",
+     "also": []
+    },
+    "svc_mint": {
+     "files": [
+      {
+       "file": "img/svc-mint.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-mint.jpg",
+     "alt": "American Eagle 20th anniversary silver coin set",
+     "label": "American Eagle 20th anniversary silver coin set",
+     "also": []
+    },
+    "slabs_wide": {
+     "files": [
+      {
+       "file": "img/slabs-wide.jpg",
+       "w": 1400,
+       "h": 646
+      }
+     ],
+     "default": "/img/slabs-wide.jpg",
+     "alt": "Rows of graded coins in slabs in the display case",
+     "label": "Rows of graded coins in slabs in the display case",
+     "also": []
+    },
+    "case_peace": {
+     "files": [
+      {
+       "file": "img/case-peace.jpg",
+       "w": 900,
+       "h": 900
+      }
+     ],
+     "default": "/img/case-peace.jpg",
+     "alt": "Boxed set of four Peace silver dollars",
+     "label": "Boxed set of four Peace silver dollars",
+     "also": []
+    },
+    "case_eagle": {
+     "files": [
+      {
+       "file": "img/case-eagle.jpg",
+       "w": 900,
+       "h": 900
+      }
+     ],
+     "default": "/img/case-eagle.jpg",
+     "alt": "American Eagle 20th anniversary silver coin set",
+     "label": "American Eagle 20th anniversary silver coin set",
+     "also": []
+    },
+    "case_red": {
+     "files": [
+      {
+       "file": "img/case-red.jpg",
+       "w": 900,
+       "h": 900
+      }
+     ],
+     "default": "/img/case-red.jpg",
+     "alt": "Red display box of graded coins",
+     "label": "Red display box of graded coins",
+     "also": []
+    },
+    "case_bullets": {
+     "files": [
+      {
+       "file": "img/case-bullets.jpg",
+       "w": 900,
+       "h": 900
+      }
+     ],
+     "default": "/img/case-bullets.jpg",
+     "alt": "Box of Virginia Civil War battlefield bullets, $5 each",
+     "label": "Box of Virginia Civil War battlefield bullets, $5 each",
+     "also": []
+    },
+    "storefront": {
+     "files": [
+      {
+       "file": "img/storefront.jpg",
+       "w": 720,
+       "h": 404
+      }
+     ],
+     "default": "/img/storefront.jpg",
+     "alt": "Capital Coin storefront at 1701 Airline Rd",
+     "label": "Capital Coin storefront at 1701 Airline Rd",
+     "also": [
+      "About page",
+      "Contact page",
+      "Appraisals and coin grading page",
+      "Bullion coins page",
+      "Coin brokerage page",
+      "Coin buying and selling page",
+      "Estate buying appraisals page",
+      "Faqs page",
+      "Gold and silver coins page",
+      "Paper money and currency page",
+      "Pcgs and ngc grading page",
+      "Sell gold and silver page",
+      "Specialty coins page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "about": {
+   "label": "About page",
+   "html": "about/index.html",
+   "slots": {
+    "hero_case": {
+     "files": [
+      {
+       "file": "img/hero-case-1500.jpg",
+       "w": 1080,
+       "h": 810
+      },
+      {
+       "file": "img/hero-case-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-case-1500.jpg",
+     "alt": "Graded silver dollars lined up in the Capital Coin display case",
+     "label": "Graded silver dollars lined up in the Capital Coin display case",
+     "also": []
+    },
+    "fig_front": {
+     "files": [
+      {
+       "file": "img/fig-front.jpg",
+       "w": 720,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-front.jpg",
+     "alt": "The Capital Coin sign over Suite 101 on Airline Road",
+     "label": "The Capital Coin sign over Suite 101 on Airline Road",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "contact": {
+   "label": "Contact page",
+   "html": "contact/index.html",
+   "slots": {
+    "hero_front": {
+     "files": [
+      {
+       "file": "img/hero-front-1500.jpg",
+       "w": 720,
+       "h": 540
+      },
+      {
+       "file": "img/hero-front-800.jpg",
+       "w": 720,
+       "h": 540
+      }
+     ],
+     "default": "/img/hero-front-1500.jpg",
+     "alt": "The Capital Coin sign over Suite 101 on Airline Road",
+     "label": "The Capital Coin sign over Suite 101 on Airline Road",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "appraisals-and-coin-grading": {
+   "label": "Appraisals and coin grading page",
+   "html": "appraisals-and-coin-grading/index.html",
+   "slots": {
+    "hero_counter": {
+     "files": [
+      {
+       "file": "img/hero-counter-1500.jpg",
+       "w": 1479,
+       "h": 1109
+      },
+      {
+       "file": "img/hero-counter-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-counter-1500.jpg",
+     "alt": "Graded coins laid out on the glass counter at Capital Coin",
+     "label": "Graded coins laid out on the glass counter at Capital Coin",
+     "also": []
+    },
+    "fig_slabs": {
+     "files": [
+      {
+       "file": "img/fig-slabs.jpg",
+       "w": 1200,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-slabs.jpg",
+     "alt": "Graded silver dollars in PCGS and NGC holders",
+     "label": "Graded silver dollars in PCGS and NGC holders",
+     "also": []
+    },
+    "t_slabs": {
+     "files": [
+      {
+       "file": "img/t-slabs.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-slabs.jpg",
+     "alt": "Graded silver dollars in PCGS and NGC holders",
+     "label": "Graded silver dollars in PCGS and NGC holders",
+     "also": [
+      "Coin brokerage page",
+      "Specialty coins page"
+     ]
+    },
+    "t_tray": {
+     "files": [
+      {
+       "file": "img/t-tray.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-tray.jpg",
+     "alt": "A tray full of old silver coins",
+     "label": "A tray full of old silver coins",
+     "also": [
+      "Coin buying and selling page",
+      "Paper money and currency page",
+      "Sell gold and silver page"
+     ]
+    },
+    "t_buy": {
+     "files": [
+      {
+       "file": "img/t-buy.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-buy.jpg",
+     "alt": "A tray of Eisenhower dollars",
+     "label": "A tray of Eisenhower dollars",
+     "also": [
+      "Bullion coins page",
+      "Coin brokerage page",
+      "Estate buying appraisals page",
+      "Gold and silver coins page",
+      "Paper money and currency page",
+      "Pcgs and ngc grading page",
+      "Sell gold and silver page"
+     ]
+    },
+    "t_paper": {
+     "files": [
+      {
+       "file": "img/t-paper.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-paper.jpg",
+     "alt": "Coins in holders on top of old paper money",
+     "label": "Coins in holders on top of old paper money",
+     "also": [
+      "Estate buying appraisals page",
+      "Specialty coins page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "bullion-coins": {
+   "label": "Bullion coins page",
+   "html": "bullion-coins/index.html",
+   "slots": {
+    "hero_bars": {
+     "files": [
+      {
+       "file": "img/hero-bars-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-bars-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-bars-1500.jpg",
+     "alt": "Silver bars and rounds on the counter at Capital Coin",
+     "label": "Silver bars and rounds on the counter at Capital Coin",
+     "also": []
+    },
+    "fig_bars": {
+     "files": [
+      {
+       "file": "img/fig-bars.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-bars.jpg",
+     "alt": "Silver bars and rounds, from 10 ounces to a kilo",
+     "label": "Silver bars and rounds, from 10 ounces to a kilo",
+     "also": []
+    },
+    "t_eagles": {
+     "files": [
+      {
+       "file": "img/t-eagles.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-eagles.jpg",
+     "alt": "American Eagle silver coin set in its case",
+     "label": "American Eagle silver coin set in its case",
+     "also": [
+      "Coin buying and selling page",
+      "Sell gold and silver page",
+      "Specialty coins page"
+     ]
+    },
+    "t_gold": {
+     "files": [
+      {
+       "file": "img/t-gold.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-gold.jpg",
+     "alt": "Gold sovereigns on black velvet",
+     "label": "Gold sovereigns on black velvet",
+     "also": [
+      "Estate buying appraisals page",
+      "Gold and silver coins page"
+     ]
+    },
+    "t_walkers": {
+     "files": [
+      {
+       "file": "img/t-walkers.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-walkers.jpg",
+     "alt": "Boxed Walking Liberty half dollar collection",
+     "label": "Boxed Walking Liberty half dollar collection",
+     "also": [
+      "Pcgs and ngc grading page",
+      "Specialty coins page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "coin-brokerage": {
+   "label": "Coin brokerage page",
+   "html": "coin-brokerage/index.html",
+   "slots": {
+    "hero_walkers": {
+     "files": [
+      {
+       "file": "img/hero-walkers-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-walkers-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-walkers-1500.jpg",
+     "alt": "Boxed Walking Liberty half dollar collection",
+     "label": "Boxed Walking Liberty half dollar collection",
+     "also": []
+    },
+    "fig_red": {
+     "files": [
+      {
+       "file": "img/fig-red.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-red.jpg",
+     "alt": "Boxed Walking Liberty half dollar collection with graded coins",
+     "label": "Boxed Walking Liberty half dollar collection with graded coins",
+     "also": []
+    },
+    "t_peace": {
+     "files": [
+      {
+       "file": "img/t-peace.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-peace.jpg",
+     "alt": "The complete set of 1921 silver dollars",
+     "label": "The complete set of 1921 silver dollars",
+     "also": [
+      "Gold and silver coins page",
+      "Paper money and currency page",
+      "Pcgs and ngc grading page"
+     ]
+    },
+    "t_bars": {
+     "files": [
+      {
+       "file": "img/t-bars.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-bars.jpg",
+     "alt": "Silver bars and rounds",
+     "label": "Silver bars and rounds",
+     "also": [
+      "Coin buying and selling page",
+      "Gold and silver coins page",
+      "Sell gold and silver page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "coin-buying-and-selling": {
+   "label": "Coin buying and selling page",
+   "html": "coin-buying-and-selling/index.html",
+   "slots": {
+    "hero_ikes": {
+     "files": [
+      {
+       "file": "img/hero-ikes-1500.jpg",
+       "w": 1494,
+       "h": 1423
+      },
+      {
+       "file": "img/hero-ikes-800.jpg",
+       "w": 800,
+       "h": 762
+      }
+     ],
+     "default": "/img/hero-ikes-1500.jpg",
+     "alt": "A tray of Eisenhower dollars at Capital Coin",
+     "label": "A tray of Eisenhower dollars at Capital Coin",
+     "also": []
+    },
+    "fig_peace": {
+     "files": [
+      {
+       "file": "img/fig-peace.jpg",
+       "w": 900,
+       "h": 675
+      }
+     ],
+     "default": "/img/fig-peace.jpg",
+     "alt": "Boxed set of four Peace silver dollars",
+     "label": "Boxed set of four Peace silver dollars",
+     "also": []
+    },
+    "t_counter": {
+     "files": [
+      {
+       "file": "img/t-counter.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-counter.jpg",
+     "alt": "Graded coins laid out on the glass counter",
+     "label": "Graded coins laid out on the glass counter",
+     "also": [
+      "Estate buying appraisals page",
+      "Paper money and currency page",
+      "Pcgs and ngc grading page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "estate-buying-appraisals": {
+   "label": "Estate buying appraisals page",
+   "html": "estate-buying-appraisals/index.html",
+   "slots": {
+    "hero_tray": {
+     "files": [
+      {
+       "file": "img/hero-tray-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-tray-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-tray-1500.jpg",
+     "alt": "A tray full of old silver coins",
+     "label": "A tray full of old silver coins",
+     "also": []
+    },
+    "fig_tray": {
+     "files": [
+      {
+       "file": "img/fig-tray.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-tray.jpg",
+     "alt": "A tray full of old silver coins",
+     "label": "A tray full of old silver coins",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "faqs": {
+   "label": "Faqs page",
+   "html": "faqs/index.html",
+   "slots": {
+    "hero_card": {
+     "files": [
+      {
+       "file": "img/hero-card-1500.jpg",
+       "w": 1440,
+       "h": 900
+      },
+      {
+       "file": "img/hero-card-800.jpg",
+       "w": 800,
+       "h": 500
+      }
+     ],
+     "default": "/img/hero-card-1500.jpg",
+     "alt": "Four old Dutch coins on a presentation card",
+     "label": "Four old Dutch coins on a presentation card",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "gold-and-silver-coins": {
+   "label": "Gold and silver coins page",
+   "html": "gold-and-silver-coins/index.html",
+   "slots": {
+    "hero_eagles": {
+     "files": [
+      {
+       "file": "img/hero-eagles-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-eagles-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-eagles-1500.jpg",
+     "alt": "American Eagle 20th anniversary silver coin set in its case",
+     "label": "American Eagle 20th anniversary silver coin set in its case",
+     "also": []
+    },
+    "fig_eagle": {
+     "files": [
+      {
+       "file": "img/fig-eagle.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-eagle.jpg",
+     "alt": "American Eagle silver coin set",
+     "label": "American Eagle silver coin set",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "paper-money-and-currency": {
+   "label": "Paper money and currency page",
+   "html": "paper-money-and-currency/index.html",
+   "slots": {
+    "hero_paper": {
+     "files": [
+      {
+       "file": "img/hero-paper-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-paper-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-paper-1500.jpg",
+     "alt": "Gold coins in holders on top of old paper money",
+     "label": "Gold coins in holders on top of old paper money",
+     "also": []
+    },
+    "fig_paper": {
+     "files": [
+      {
+       "file": "img/fig-paper.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-paper.jpg",
+     "alt": "Coins in holders on top of a pile of old paper money",
+     "label": "Coins in holders on top of a pile of old paper money",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "pcgs-and-ngc-grading": {
+   "label": "Pcgs and ngc grading page",
+   "html": "pcgs-and-ngc-grading/index.html",
+   "slots": {
+    "hero_slabs": {
+     "files": [
+      {
+       "file": "img/hero-slabs-1500.jpg",
+       "w": 1500,
+       "h": 938
+      },
+      {
+       "file": "img/hero-slabs-800.jpg",
+       "w": 800,
+       "h": 500
+      }
+     ],
+     "default": "/img/hero-slabs-1500.jpg",
+     "alt": "Graded Morgan silver dollars in PCGS and NGC holders in the case",
+     "label": "Graded Morgan silver dollars in PCGS and NGC holders in the case",
+     "also": []
+    },
+    "fig_case": {
+     "files": [
+      {
+       "file": "img/fig-case.jpg",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "default": "/img/fig-case.jpg",
+     "alt": "Graded silver dollars lined up in the display case",
+     "label": "Graded silver dollars lined up in the display case",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "sell-gold-and-silver": {
+   "label": "Sell gold and silver page",
+   "html": "sell-gold-and-silver/index.html",
+   "slots": {
+    "hero_gold": {
+     "files": [
+      {
+       "file": "img/hero-gold-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-gold-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-gold-1500.jpg",
+     "alt": "A row of gold sovereigns on black velvet",
+     "label": "A row of gold sovereigns on black velvet",
+     "also": []
+    },
+    "fig_gold": {
+     "files": [
+      {
+       "file": "img/fig-gold.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-gold.jpg",
+     "alt": "Gold sovereigns on black velvet",
+     "label": "Gold sovereigns on black velvet",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "specialty-coins": {
+   "label": "Specialty coins page",
+   "html": "specialty-coins/index.html",
+   "slots": {
+    "hero_peace": {
+     "files": [
+      {
+       "file": "img/hero-peace-1500.jpg",
+       "w": 1500,
+       "h": 937
+      },
+      {
+       "file": "img/hero-peace-800.jpg",
+       "w": 800,
+       "h": 500
+      }
+     ],
+     "default": "/img/hero-peace-1500.jpg",
+     "alt": "The complete set of 1921 silver dollars in a display frame",
+     "label": "The complete set of 1921 silver dollars in a display frame",
+     "also": []
+    },
+    "fig_walkers": {
+     "files": [
+      {
+       "file": "img/fig-walkers.jpg",
+       "w": 1200,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-walkers.jpg",
+     "alt": "Boxed Walking Liberty half dollar collection",
+     "label": "Boxed Walking Liberty half dollar collection",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  }
+ }
+}

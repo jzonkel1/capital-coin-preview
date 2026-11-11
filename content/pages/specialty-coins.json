@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_peace": {
+      "photo": "/img/hero-peace-1500.jpg",
+      "description": "The complete set of 1921 silver dollars in a display frame",
+      "crop": "middle"
+    },
+    "fig_walkers": {
+      "photo": "/img/fig-walkers.jpg",
+      "description": "Boxed Walking Liberty half dollar collection",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

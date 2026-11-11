@@ -1,0 +1,1327 @@
+media:
+  input: site/img
+  output: /img
+  path: site/img/uploads
+  extensions: [jpg, jpeg, png, webp, heic]
+content:
+  - name: settings
+    label: "Hours and banner"
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: banner
+        label: "Banner at the top of every page"
+        type: object
+        fields:
+          - name: show
+            label: "Show the banner"
+            type: boolean
+          - name: text
+            label: "Banner message"
+            description: "One short line, e.g. Closed Thanksgiving Day. Open Friday 10 to 6."
+            type: string
+      - name: hours
+        label: "Store hours"
+        description: "Changes every hours line on the site, the open-now line and Google. Untick Open for days you are closed."
+        type: object
+        fields:
+          - name: monday
+            label: Monday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: tuesday
+            label: Tuesday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: wednesday
+            label: Wednesday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: thursday
+            label: Thursday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: friday
+            label: Friday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: saturday
+            label: Saturday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: sunday
+            label: Sunday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+  - name: page_home
+    label: "Home page"
+    type: file
+    path: content/pages/home.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero
+            label: "A row of gold sovereigns on black velvet at Capital Coin"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: inside
+            label: "Graded silver dollars lined up in the Capital Coin display case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_buy
+            label: "A tray of Eisenhower dollars priced at $4 each or 3 for $10"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_bullion
+            label: "Silver bars and rounds on the counter"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_gold
+            label: "Gold sovereigns on black velvet, up close"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_appraise
+            label: "Graded coins in slabs in the display case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_estate
+            label: "A case full of old silver coins"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_paper
+            label: "Gold coins in holders on top of old paper money"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_mint
+            label: "American Eagle 20th anniversary silver coin set"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: slabs_wide
+            label: "Rows of graded coins in slabs in the display case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: case_peace
+            label: "Boxed set of four Peace silver dollars"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: case_eagle
+            label: "American Eagle 20th anniversary silver coin set"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: case_red
+            label: "Red display box of graded coins"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: case_bullets
+            label: "Box of Virginia Civil War battlefield bullets, $5 each"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: storefront
+            label: "Capital Coin storefront at 1701 Airline Rd"
+            type: object
+            description: "Also shows on: About page, Contact page, Appraisals and coin grading page, Bullion coins page, Coin brokerage page, Coin buying and selling page, Estate buying appraisals page, Faqs page, Gold and silver coins page, Paper money and currency page, Pcgs and ngc grading page, Sell gold and silver page, Specialty coins page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_about
+    label: "About page"
+    type: file
+    path: content/pages/about.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_case
+            label: "Graded silver dollars lined up in the Capital Coin display case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_front
+            label: "The Capital Coin sign over Suite 101 on Airline Road"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_contact
+    label: "Contact page"
+    type: file
+    path: content/pages/contact.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_front
+            label: "The Capital Coin sign over Suite 101 on Airline Road"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_appraisals_and_coin_grading
+    label: "Appraisals and coin grading page"
+    type: file
+    path: content/pages/appraisals-and-coin-grading.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_counter
+            label: "Graded coins laid out on the glass counter at Capital Coin"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_slabs
+            label: "Graded silver dollars in PCGS and NGC holders"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_slabs
+            label: "Graded silver dollars in PCGS and NGC holders"
+            type: object
+            description: "Also shows on: Coin brokerage page, Specialty coins page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_tray
+            label: "A tray full of old silver coins"
+            type: object
+            description: "Also shows on: Coin buying and selling page, Paper money and currency page, Sell gold and silver page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_buy
+            label: "A tray of Eisenhower dollars"
+            type: object
+            description: "Also shows on: Bullion coins page, Coin brokerage page, Estate buying appraisals page, Gold and silver coins page, Paper money and currency page, Pcgs and ngc grading page, Sell gold and silver page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_paper
+            label: "Coins in holders on top of old paper money"
+            type: object
+            description: "Also shows on: Estate buying appraisals page, Specialty coins page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_bullion_coins
+    label: "Bullion coins page"
+    type: file
+    path: content/pages/bullion-coins.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_bars
+            label: "Silver bars and rounds on the counter at Capital Coin"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_bars
+            label: "Silver bars and rounds, from 10 ounces to a kilo"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_eagles
+            label: "American Eagle silver coin set in its case"
+            type: object
+            description: "Also shows on: Coin buying and selling page, Sell gold and silver page, Specialty coins page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_gold
+            label: "Gold sovereigns on black velvet"
+            type: object
+            description: "Also shows on: Estate buying appraisals page, Gold and silver coins page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_walkers
+            label: "Boxed Walking Liberty half dollar collection"
+            type: object
+            description: "Also shows on: Pcgs and ngc grading page, Specialty coins page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_coin_brokerage
+    label: "Coin brokerage page"
+    type: file
+    path: content/pages/coin-brokerage.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_walkers
+            label: "Boxed Walking Liberty half dollar collection"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_red
+            label: "Boxed Walking Liberty half dollar collection with graded coins"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_peace
+            label: "The complete set of 1921 silver dollars"
+            type: object
+            description: "Also shows on: Gold and silver coins page, Paper money and currency page, Pcgs and ngc grading page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_bars
+            label: "Silver bars and rounds"
+            type: object
+            description: "Also shows on: Coin buying and selling page, Gold and silver coins page, Sell gold and silver page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_coin_buying_and_selling
+    label: "Coin buying and selling page"
+    type: file
+    path: content/pages/coin-buying-and-selling.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_ikes
+            label: "A tray of Eisenhower dollars at Capital Coin"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_peace
+            label: "Boxed set of four Peace silver dollars"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_counter
+            label: "Graded coins laid out on the glass counter"
+            type: object
+            description: "Also shows on: Estate buying appraisals page, Paper money and currency page, Pcgs and ngc grading page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_estate_buying_appraisals
+    label: "Estate buying appraisals page"
+    type: file
+    path: content/pages/estate-buying-appraisals.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_tray
+            label: "A tray full of old silver coins"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_tray
+            label: "A tray full of old silver coins"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_faqs
+    label: "Faqs page"
+    type: file
+    path: content/pages/faqs.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_card
+            label: "Four old Dutch coins on a presentation card"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_gold_and_silver_coins
+    label: "Gold and silver coins page"
+    type: file
+    path: content/pages/gold-and-silver-coins.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_eagles
+            label: "American Eagle 20th anniversary silver coin set in its case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_eagle
+            label: "American Eagle silver coin set"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_paper_money_and_currency
+    label: "Paper money and currency page"
+    type: file
+    path: content/pages/paper-money-and-currency.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_paper
+            label: "Gold coins in holders on top of old paper money"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_paper
+            label: "Coins in holders on top of a pile of old paper money"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_pcgs_and_ngc_grading
+    label: "Pcgs and ngc grading page"
+    type: file
+    path: content/pages/pcgs-and-ngc-grading.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_slabs
+            label: "Graded Morgan silver dollars in PCGS and NGC holders in the case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_case
+            label: "Graded silver dollars lined up in the display case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_sell_gold_and_silver
+    label: "Sell gold and silver page"
+    type: file
+    path: content/pages/sell-gold-and-silver.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_gold
+            label: "A row of gold sovereigns on black velvet"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_gold
+            label: "Gold sovereigns on black velvet"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_specialty_coins
+    label: "Specialty coins page"
+    type: file
+    path: content/pages/specialty-coins.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_peace
+            label: "The complete set of 1921 silver dollars in a display frame"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_walkers
+            label: "Boxed Walking Liberty half dollar collection"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string

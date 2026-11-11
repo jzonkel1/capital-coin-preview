@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_tray": {
+      "photo": "/img/hero-tray-1500.jpg",
+      "description": "A tray full of old silver coins",
+      "crop": "middle"
+    },
+    "fig_tray": {
+      "photo": "/img/fig-tray.jpg",
+      "description": "A tray full of old silver coins",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_front": {
+      "photo": "/img/hero-front-1500.jpg",
+      "description": "The Capital Coin sign over Suite 101 on Airline Road",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

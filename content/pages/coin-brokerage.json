@@ -1,0 +1,28 @@
+{
+  "photos": {
+    "hero_walkers": {
+      "photo": "/img/hero-walkers-1500.jpg",
+      "description": "Boxed Walking Liberty half dollar collection",
+      "crop": "middle"
+    },
+    "fig_red": {
+      "photo": "/img/fig-red.jpg",
+      "description": "Boxed Walking Liberty half dollar collection with graded coins",
+      "crop": "middle"
+    },
+    "t_peace": {
+      "photo": "/img/t-peace.jpg",
+      "description": "The complete set of 1921 silver dollars",
+      "crop": "middle"
+    },
+    "t_bars": {
+      "photo": "/img/t-bars.jpg",
+      "description": "Silver bars and rounds",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

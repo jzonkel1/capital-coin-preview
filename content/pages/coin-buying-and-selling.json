@@ -1,0 +1,23 @@
+{
+  "photos": {
+    "hero_ikes": {
+      "photo": "/img/hero-ikes-1500.jpg",
+      "description": "A tray of Eisenhower dollars at Capital Coin",
+      "crop": "middle"
+    },
+    "fig_peace": {
+      "photo": "/img/fig-peace.jpg",
+      "description": "Boxed set of four Peace silver dollars",
+      "crop": "middle"
+    },
+    "t_counter": {
+      "photo": "/img/t-counter.jpg",
+      "description": "Graded coins laid out on the glass counter",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_slabs": {
+      "photo": "/img/hero-slabs-1500.jpg",
+      "description": "Graded Morgan silver dollars in PCGS and NGC holders in the case",
+      "crop": "middle"
+    },
+    "fig_case": {
+      "photo": "/img/fig-case.jpg",
+      "description": "Graded silver dollars lined up in the display case",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

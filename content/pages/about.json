@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_case": {
+      "photo": "/img/hero-case-1500.jpg",
+      "description": "Graded silver dollars lined up in the Capital Coin display case",
+      "crop": "middle"
+    },
+    "fig_front": {
+      "photo": "/img/fig-front.jpg",
+      "description": "The Capital Coin sign over Suite 101 on Airline Road",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

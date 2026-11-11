@@ -1,0 +1,83 @@
+{
+  "photos": {
+    "hero": {
+      "photo": "/img/hero.jpg",
+      "description": "A row of gold sovereigns on black velvet at Capital Coin",
+      "crop": "middle"
+    },
+    "inside": {
+      "photo": "/img/inside.jpg",
+      "description": "Graded silver dollars lined up in the Capital Coin display case",
+      "crop": "middle"
+    },
+    "svc_buy": {
+      "photo": "/img/svc-buy.jpg",
+      "description": "A tray of Eisenhower dollars priced at $4 each or 3 for $10",
+      "crop": "middle"
+    },
+    "svc_bullion": {
+      "photo": "/img/svc-bullion.jpg",
+      "description": "Silver bars and rounds on the counter",
+      "crop": "middle"
+    },
+    "svc_gold": {
+      "photo": "/img/svc-gold.jpg",
+      "description": "Gold sovereigns on black velvet, up close",
+      "crop": "middle"
+    },
+    "svc_appraise": {
+      "photo": "/img/svc-appraise.jpg",
+      "description": "Graded coins in slabs in the display case",
+      "crop": "middle"
+    },
+    "svc_estate": {
+      "photo": "/img/svc-estate.jpg",
+      "description": "A case full of old silver coins",
+      "crop": "middle"
+    },
+    "svc_paper": {
+      "photo": "/img/svc-paper.jpg",
+      "description": "Gold coins in holders on top of old paper money",
+      "crop": "middle"
+    },
+    "svc_mint": {
+      "photo": "/img/svc-mint.jpg",
+      "description": "American Eagle 20th anniversary silver coin set",
+      "crop": "middle"
+    },
+    "slabs_wide": {
+      "photo": "/img/slabs-wide.jpg",
+      "description": "Rows of graded coins in slabs in the display case",
+      "crop": "middle"
+    },
+    "case_peace": {
+      "photo": "/img/case-peace.jpg",
+      "description": "Boxed set of four Peace silver dollars",
+      "crop": "middle"
+    },
+    "case_eagle": {
+      "photo": "/img/case-eagle.jpg",
+      "description": "American Eagle 20th anniversary silver coin set",
+      "crop": "middle"
+    },
+    "case_red": {
+      "photo": "/img/case-red.jpg",
+      "description": "Red display box of graded coins",
+      "crop": "middle"
+    },
+    "case_bullets": {
+      "photo": "/img/case-bullets.jpg",
+      "description": "Box of Virginia Civil War battlefield bullets, $5 each",
+      "crop": "middle"
+    },
+    "storefront": {
+      "photo": "/img/storefront.jpg",
+      "description": "Capital Coin storefront at 1701 Airline Rd",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

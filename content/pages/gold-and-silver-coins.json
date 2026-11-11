@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_eagles": {
+      "photo": "/img/hero-eagles-1500.jpg",
+      "description": "American Eagle 20th anniversary silver coin set in its case",
+      "crop": "middle"
+    },
+    "fig_eagle": {
+      "photo": "/img/fig-eagle.jpg",
+      "description": "American Eagle silver coin set",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

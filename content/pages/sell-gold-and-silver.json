@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_gold": {
+      "photo": "/img/hero-gold-1500.jpg",
+      "description": "A row of gold sovereigns on black velvet",
+      "crop": "middle"
+    },
+    "fig_gold": {
+      "photo": "/img/fig-gold.jpg",
+      "description": "Gold sovereigns on black velvet",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

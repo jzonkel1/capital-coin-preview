@@ -1,0 +1,38 @@
+{
+  "photos": {
+    "hero_counter": {
+      "photo": "/img/hero-counter-1500.jpg",
+      "description": "Graded coins laid out on the glass counter at Capital Coin",
+      "crop": "middle"
+    },
+    "fig_slabs": {
+      "photo": "/img/fig-slabs.jpg",
+      "description": "Graded silver dollars in PCGS and NGC holders",
+      "crop": "middle"
+    },
+    "t_slabs": {
+      "photo": "/img/t-slabs.jpg",
+      "description": "Graded silver dollars in PCGS and NGC holders",
+      "crop": "middle"
+    },
+    "t_tray": {
+      "photo": "/img/t-tray.jpg",
+      "description": "A tray full of old silver coins",
+      "crop": "middle"
+    },
+    "t_buy": {
+      "photo": "/img/t-buy.jpg",
+      "description": "A tray of Eisenhower dollars",
+      "crop": "middle"
+    },
+    "t_paper": {
+      "photo": "/img/t-paper.jpg",
+      "description": "Coins in holders on top of old paper money",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

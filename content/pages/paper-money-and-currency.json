@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_paper": {
+      "photo": "/img/hero-paper-1500.jpg",
+      "description": "Gold coins in holders on top of old paper money",
+      "crop": "middle"
+    },
+    "fig_paper": {
+      "photo": "/img/fig-paper.jpg",
+      "description": "Coins in holders on top of a pile of old paper money",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_card": {
+      "photo": "/img/hero-card-1500.jpg",
+      "description": "Four old Dutch coins on a presentation card",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}
